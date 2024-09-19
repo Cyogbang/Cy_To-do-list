@@ -7,6 +7,102 @@
   pointer-events: none;
 }
 
+.Inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.Inputs button {
+  color: white;
+  background-color: gray;
+  border-radius: 0.5rem;
+}
+
+.Inputs button:hover {
+  background-color: rgb(65, 65, 65);
+  cursor: pointer;
+}
+
+.input {
+  width: 30rem;
+  padding: 0.6rem;
+}
+
+.allTsk,
+.activeTsk,
+.doneTsk {
+  width: 6rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.allTsk:hover,
+.allTsk:active {
+  color: white;
+  background-color: gray;
+}
+
+.activeTsk:hover,
+.activeTsk:active {
+  color: white;
+  background-color: rgb(194, 194, 0);
+}
+
+.doneTsk:hover,
+.doneTsk:active {
+  color: white;
+  background-color: rgb(0, 100, 0);
+}
+
+
+.taskBox {
+  width: 20rem;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0.5rem 0.2rem;
+  margin-top: 3rem;
+}
+
+.taskID {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.editBTN,
+.delBTN {
+  padding: 0.5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.editBTN:hover {
+  color: white;
+  background-color: rgb(194, 194, 0);
+}
+
+.delBTN:hover {
+  color: white;
+  background-color: rgb(180, 0, 0);
+}
+
+.taskInfo {
+  color: black;
+  background-color: white;
+  margin-bottom: 0rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.2rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
